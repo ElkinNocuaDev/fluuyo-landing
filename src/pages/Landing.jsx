@@ -8,6 +8,7 @@ import {
   Paperclip,
   ChevronDown,
 } from "lucide-react";
+import logo from "../assets/fluuyo-logo-web-outlines.svg";
 
 const FaqItem = ({ q, a, defaultOpen = false }) => {
   const [open, setOpen] = useState(defaultOpen);
@@ -86,7 +87,7 @@ export default function Landing() {
         <header className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="src/assets/fluuyo-logo-web-outlines.svg"
+              src={logo}
               alt="Fluuyo"
               className="h-10 w-auto"
               loading="eager"
