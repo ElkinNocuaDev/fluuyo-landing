@@ -49,7 +49,7 @@ const FaqItem = ({ q, a, defaultOpen = false }) => {
 
 export default function Landing() {
   const goToApp = () => {
-    window.location.href = "https://app.fluuyo.com/login";
+    window.location.href = "https://app.fluuyo.com";
   };
 
   // --- Simulador (MVP)
@@ -130,12 +130,12 @@ export default function Landing() {
                     Ir a la app
                   </button>
 
-                  <a
-                    href="#features"
+                  <button
+                    onClick={goToApp}
                     className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
                   >
                     Ver cómo funciona
-                  </a>
+                  </button>
                 </div>
 
                 {/* Trust signals (Lucide) */}
