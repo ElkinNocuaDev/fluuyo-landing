@@ -49,7 +49,7 @@ const FaqItem = ({ q, a, defaultOpen = false }) => {
 
 export default function Landing() {
   const goToApp = () => {
-    window.location.href = "https://app.fluuyo.com";
+    window.open("https://app.fluuyo.com", "_blank", "noopener,noreferrer");
   };
 
   // --- Simulador (MVP)
